@@ -1,3 +1,6 @@
+html {
+  font-size: 130%; /* 62.5% --> 10px */
+}
 p {
   padding: 10px 20px;
   border: 10px solid gold;
@@ -7,15 +10,32 @@ p {
 .box {
   width: 200px;
   height: 200px;
-  background-color: greenyellow;
+  background-color: lightgrey;
   padding: 30px;
   border: 10px solid gold;
   margin: 40px;
+  overflow: hidden auto;
 }
 
 div a {
-  background-color: darkred;
+  background-color: yellowgreen;
 }
 a {
   background-color: darkblue;
 }
+
+.relatives {
+  padding: 40px;
+  margin: 40px;
+  border: 20px solid rgba(141, 29, 88, 0.8);
+  background-color: rgba(139, 142, 208, 0.5);
+  width: 150px;
+  height: 150px;
+}
+/* width: 10em; em is * times of font-size of the parent element pixels. Here 10 * 16px(default font-size).
+  height: 10rem; rem is * times of  the root element font-size. Here root is html(16px)*/
+/* width: 50%; -- these values are inherited from parent size.(% of parents w,h values)
+  height: 25%; */
+/* width: 25vw; -- viewport (w,h) measurement units.
+  height: 25vh; */
+/* position: relative; */
