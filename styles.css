@@ -1,0 +1,21 @@
+p {
+  padding: 10px 20px;
+  border: 10px solid gold;
+  background-color: yellowgreen;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: greenyellow;
+  padding: 30px;
+  border: 10px solid gold;
+  margin: 40px;
+}
+
+div a {
+  background-color: darkred;
+}
+a {
+  background-color: darkblue;
+}
