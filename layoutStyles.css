@@ -57,3 +57,26 @@ body {
 .clear {
   clear: both;
 }
+
+.container {
+  border: 3px solid coral;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.flexbox {
+  flex-basis: 10rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: yellowgreen;
+  margin: 1rem;
+}
+
+.flexbox-one {
+  align-self: flex-end;
+  flex-basis: 5rem;
+}
