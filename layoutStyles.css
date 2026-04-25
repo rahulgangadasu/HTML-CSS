@@ -1,0 +1,59 @@
+body {
+  margin: 10px;
+  height: 200vh;
+}
+
+::selection {
+  background-color: rgb(154, 130, 130);
+}
+
+.clearfix {
+  border: 10px rgb(49, 36, 116);
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.boxes {
+  border: 5px solid rgb(195, 12, 134);
+  position: relative;
+}
+
+.box {
+  width: 10rem;
+  height: 10rem;
+}
+
+.box-one {
+  background-color: rgb(164, 62, 62);
+  z-index: 10;
+}
+.box-two {
+  background-color: rgb(67, 164, 109);
+  /* position: fixed; */
+  top: 0;
+}
+.box-three {
+  background-color: rgb(163, 147, 56);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: yellowgreen;
+  border: 2px solid tomato;
+  float: right;
+  margin-right: 3rem;
+}
+.p1 {
+  margin-top: 5rem;
+}
+
+.clear {
+  clear: both;
+}
