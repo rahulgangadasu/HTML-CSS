@@ -1,9 +1,12 @@
 body {
   margin: 10px;
-  height: 200vh;
+  height: 300vh;
+  display: grid;
 }
 
 ::selection {
+  /* The ::selection CSS pseudo-element applies styles 
+                to the portion of a document that has been highlighted (selected) by the user. */
   background-color: rgb(154, 130, 130);
 }
 
@@ -63,13 +66,13 @@ body {
   height: 90vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  align-content: center;
+  justify-content: center; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+  /* flex-wrap: wrap; */
+  align-content: center; /* Aligns the flex lines when there is extra space in the cross-axis */
 }
 .flexbox {
-  flex-basis: 10rem;
+  flex-basis: 10rem; /* Sets the initial size of the flex item before any remaining space is distributed. */
   width: 5rem;
   height: 5rem;
   background-color: yellowgreen;
@@ -79,4 +82,46 @@ body {
 .flexbox-one {
   align-self: flex-end;
   flex-basis: 5rem;
+}
+
+.gridcontainer {
+  margin: 20px 0px;
+  border: 5px solid rebeccapurple;
+  height: 60vh;
+  display: grid;
+  grid-template-rows: 100px 10rem;
+  grid-template-columns: 100px 10rem;
+  /* grid-template: repeat(3, 100px) / repeat(2, 100px); used to display a grid with 3 rows and 2 columns */
+  justify-content: center;
+  align-content: center;
+  justify-items: stretch; /* Aligns items along the row (inline) axis */
+  align-items: stretch; /* Aligns items along the column (block) axis */
+  row-gap: 10px;
+  column-gap: 10px;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer"; /* Defines named grid areas for layout purposes */
+  height: 90vh;
+}
+
+.griditemA,
+.griditemC {
+  width: 5rem;
+  height: 5rem;
+  background-color: rgb(82, 141, 155);
+  margin: 1rem;
+  justify-self: stretch;
+}
+
+.griditemB {
+  background-color: rgb(115, 139, 83);
+  justify-self: stretch;
+  grid-column: 1/3; /* Spans across 2 columns */
+  grid-row: 2/4; /* Spans across 2 rows */
+  grid-area: header; /* Assigns the grid item to a named grid area defined in grid-template-areas */
+}
+
+.p1 {
+  visibility: hidden; /* Hides the element but it still takes up space in the layout */
 }
