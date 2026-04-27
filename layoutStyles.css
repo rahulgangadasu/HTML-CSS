@@ -50,7 +50,8 @@ body {
   height: 5rem;
   background-color: yellowgreen;
   border: 2px solid tomato;
-  float: right;
+  float: right; /* Floats the element to the right, 
+  allowing other content to wrap around it on the left side. */
   margin-right: 3rem;
 }
 .p1 {
@@ -63,7 +64,6 @@ body {
 
 .container {
   border: 3px solid coral;
-  height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: center; /* Align items horizontally */
