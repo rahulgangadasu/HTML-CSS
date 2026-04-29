@@ -1,0 +1,56 @@
+html {
+  height: 600vh;
+}
+body {
+  height: 200vh;
+  background: url(../Images/bg-paper@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meal:hover {
+  filter: grayscale(70%) blur(2px);
+}
+
+.san-francisco {
+  background: url(../Images/bg-sanfrancisco.jpg);
+  background-size: cover;
+  /* background-attachment: fixed; */
+  height: 50%;
+}
+
+.icons {
+  margin: 50px 10px;
+  border: 5px solid black;
+  padding: 10px;
+  background: lightcyan;
+}
+
+.clippath {
+  clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+  );
+}
+
+.resolution {
+  width: 800px;
+  height: 800px;
+}
+
+.svg {
+  margin: 50px 10px;
+  background: url(../Images/constellation.svg);
+}
+.ufo {
+  margin: 50px 10px;
+  border: 20px solid black;
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+}

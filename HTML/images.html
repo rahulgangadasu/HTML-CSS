@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <link rel="stylesheet" href="../CSS/image-styles.css" />
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+  </head>
+  <body>
+    <img class="meal" src="../Images/meal.jpg" alt="A meal bowl" />
+    <div class="san-francisco">
+      <h1>San Francisco Background image</h1>
+    </div>
+    <div class="icons sprite">
+      <img class="icon" src="../Images/dishes.png" alt="Icon 1" />
+      <img class="icon" src="../Images/landing.png" alt="Icon 2" />
+      <img class="icon" src="../Images/rocketship.png" alt="Icon 3" />
+      <img class="icon" src="../Images/saturn.png" alt="Icon 3" />
+      <img class="icon" src="../Images/ufo.png" alt="Icon 3" />
+    </div>
+    <div class="clippath"><img src="../Images/meal.jpg" alt="" /></div>
+    <div class="hd">
+      <img
+        class="resolution"
+        src="../Images/meal.jpg"
+        alt=""
+        srcset="
+          ../Images/meal.jpg     400w,
+          ../Images/meal@2x.jpg  800w,
+          ../Images/meal@3x.jpg 1200w
+        "
+        sizes="(max-width: 500px) 100vw, (max-width: 700px) 50vw, 33vw"
+      />
+    </div>
+    <div class="svg"><img src="../Images/ufo.svg" alt="" class="ufo" /></div>
+  </body>
+</html>
