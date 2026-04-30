@@ -1,3 +1,7 @@
+html {
+  height: 200vh;
+}
+
 body {
   font-family:
     system-ui,
@@ -18,8 +22,9 @@ label {
   display: block;
 }
 input[type="text"],
-input[type="email"] {
-  width: 50%;
+input[type="email"],
+input[type="number"] {
+  width: 25%;
   padding: 0.5rem 0.7rem;
   border: 1px solid grey;
   border-radius: 7px;
@@ -46,4 +51,41 @@ button {
 
 .form-group {
   margin-bottom: 1rem;
+}
+
+.textfields {
+  margin-top: 1rem;
+}
+
+textarea {
+  width: 50%;
+  margin: 1rem 0;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid grey;
+  border-radius: 7px;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  resize: none;
+}
+
+.checkbox label,
+.label-inline {
+  display: inline-block;
+  margin: 0;
+}
+
+.datalist {
+  margin-top: 1rem;
+}
+
+.fieldset {
+  margin-top: 2rem;
+  border: 5px solid rgb(26, 7, 39);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.validations {
+  margin-top: 2rem;
 }
